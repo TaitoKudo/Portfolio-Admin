@@ -6,9 +6,13 @@
 </head>
 <body>
 <h1>
-	Hello world!  
+	Hello world!
 </h1>
-
+<form method="get" action=" <%=request.getContextPath() %>/upload">
+	<div style="padding: 5px;">
+		<button type="submit">upload</button>
+	</div>
+</form>
 <P>  The time on the server is ${serverTime}. </P>
 </body>
 </html>
