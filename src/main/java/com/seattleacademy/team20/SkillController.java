@@ -87,7 +87,7 @@ public class SkillController {
   public void uploadSkill(List<Skill> skills) {
     //テータの保存 skillsをrefで定義
     final FirebaseDatabase database = FirebaseDatabase.getInstance(app);
-    DatabaseReference ref = database.getReference("sampleSkills");
+    DatabaseReference ref = database.getReference("skills");
     //MySQLからデータの取得 DBAcceseSumpleContのしたの部分　
     List<Map<String, Object>> dataList = new ArrayList<Map<String, Object>>();
     Map<String, Object> map;
